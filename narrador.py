@@ -4,6 +4,10 @@ from IPython.display import Audio, display
 import whisper
 from openai import OpenAI
 from gtts import gTTS
+import os
+from openai import OpenAI
+
+
 
 # Função para gravar áudio
 def record(seconds=10, filename="request_audio.wav"):
@@ -30,8 +34,9 @@ result = model.transcribe(record_file)
 texto_usuario = result["text"]
 
 print("Transcrição:", texto_usuario)
-# Conecta ao GPT (precisa de chave ativa e créditos)
-client = OpenAI(api_key="sua chave api")
+
+# Conecta ao GPT usando a variável de ambiente
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 response = client.chat.completions.create(
     model="gpt-5.4-mini",  # pode usar outro modelo disponível
@@ -40,6 +45,7 @@ response = client.chat.completions.create(
         {"role": "user", "content": texto_usuario}
     ]
 )
+
 
 historia = response.choices[0].message.content
 print("História:", historia)
