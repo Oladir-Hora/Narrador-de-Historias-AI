@@ -1,12 +1,17 @@
+ 
 # Narrador de Histórias com IA 🎙️🤖
 
-Projeto em Python que grava áudio, transcreve com Whisper, gera continuação com GPT e narra com TTS.
+Este projeto implementa um narrador de histórias interativo que combina gravação de áudio, transcrição de fala e inteligência artificial para criar experiências criativas.
 
-## 🚀 Funcionalidades
-- Grava áudio pelo microfone
-- Transcreve fala em texto usando Whisper local
-- Cria continuação da história com GPT
-- Narra a resposta em voz usando pyttsx3 (offline)
+Gravação de áudio: captura a voz do usuário pelo microfone.
+
+Transcrição: converte a fala em texto usando o modelo Whisper local.
+
+Continuação da história: gera narrativas criativas com o modelo GPT.
+
+Narração em voz: reproduz a resposta em áudio usando gTTS (Google Text-to-Speech).
+
+O objetivo é proporcionar uma experiência divertida e envolvente, onde o usuário pode começar uma história com sua própria voz e ouvir a continuação narrada pela inteligência artificial.
 
 ## 📦 Instalação
 Clone o repositório:
