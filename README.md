@@ -8,7 +8,7 @@ Este projeto implementa um narrador de histórias interativo que combina **grava
 - 🎙 **Gravação de áudio**: captura a voz do usuário pelo microfone.  
 - 📝 **Transcrição de fala (Whisper)**: converte o áudio em texto.  
 - ✨ **Continuação da narrativa (GPT)**: gera automaticamente a continuação da história com IA.  
-- 🔊 **Narração em voz (gTTS/pyttsx3)**: transforma o texto em áudio narrado.  
+- 🔊 **Narração em voz (gTTS)**: transforma o texto em áudio narrado.  
 
 ---
 
@@ -16,7 +16,7 @@ Este projeto implementa um narrador de histórias interativo que combina **grava
 - **Python** → linguagem principal do projeto  
 - **Whisper** → reconhecimento de fala (Speech-to-Text)  
 - **OpenAI GPT** → geração de texto criativo  
-- **gTTS / pyttsx3** → síntese de voz (Text-to-Speech)  
+- **gTTS** → síntese de voz (Text-to-Speech)  
 - **Sounddevice / Scipy** → manipulação e gravação de áudio  
 
 ---
